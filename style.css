@@ -25,18 +25,19 @@ a:hover {
 }
 
 table, th, tr{
-    border: 3px dotted gray;
+    border: 3px dotted red;
     text-align: center;
     margin-right: auto;
     margin-left: auto;
 }
 
-@media (min-width: 500px) {
+/* @media (min-width: 500px) {
     table, th, tr  {
-        border: 2px solid gray;
+        border: 2px solid red;
         text-align: center;
+
     }
-}
+} */
 
 @media (max-width: 499px) {
     table, th, tr {
