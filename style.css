@@ -8,6 +8,7 @@
     font-style: italic;
 }
 
-p {
-    
+table th tr{
+    border: 5px solid gray;
+    text-align: left;
 }
