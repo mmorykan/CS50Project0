@@ -31,7 +31,7 @@ a:hover {
     margin-left: auto;
 } */
 
-@media (min-width: 500px) {
+@media screen and (min-width: 500px) {
     table, th, tr  {
         border: 3px dotted red;
         text-align: center;
@@ -40,7 +40,7 @@ a:hover {
     }
 }
 
-@media (max-width: 499px) {
+@media screen and (max-width: 499px) {
     table, th, tr {
         border: 2px solid gray;
         text-align: left;
