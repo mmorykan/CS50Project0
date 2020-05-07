@@ -8,7 +8,22 @@
     font-style: italic;
 }
 
+a::before {
+    content: "\21d2";
+    font-weight: bold;
+}
+
+a::after {
+    content: "\21d0";
+    font-weight: bold;
+}
+
+a:hover {
+    background-color: aqua; 
+}
+
+
 table, th, tr{
-    border: 5px solid gray;
+    border: 3px solid gray;
     text-align: left;
 }
