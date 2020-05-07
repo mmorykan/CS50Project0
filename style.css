@@ -24,7 +24,6 @@ a:hover {
     background-color: aqua; 
 }
 
-
 table, th, tr{
     border: 3px dotted gray;
     text-align: center;
@@ -43,3 +42,4 @@ table, th, tr{
         text-align: left;
     }
 }
+
