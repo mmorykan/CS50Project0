@@ -1,5 +1,5 @@
 /* $font-weight: bold; */
-
+/* $border: 3px dotted red; */
 .name {
     color: red;
     font-weight: bold;
@@ -24,20 +24,21 @@ a:hover {
     background-color: aqua; 
 }
 
-table, th, tr{
+/* table, th, tr{
     border: 3px dotted red;
     text-align: center;
     margin-right: auto;
     margin-left: auto;
-}
-
-/* @media (min-width: 500px) {
-    table, th, tr  {
-        border: 2px solid red;
-        text-align: center;
-
-    }
 } */
+
+@media (min-width: 500px) {
+    table, th, tr  {
+        border: 3px dotted red;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
 
 @media (max-width: 499px) {
     table, th, tr {
