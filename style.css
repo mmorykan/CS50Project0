@@ -1,4 +1,13 @@
 .name {
-    color: blue;
+    color: red;
     font-weight: bold;
+    font-family: cursive;
+}
+
+#italics {
+    font-style: italic;
+}
+
+p {
+    
 }
