@@ -8,7 +8,7 @@
     font-style: italic;
 }
 
-table th tr{
+table, th, tr{
     border: 5px solid gray;
     text-align: left;
 }
