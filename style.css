@@ -27,6 +27,8 @@ a:hover {
 table, th, tr{
     border: 3px dotted gray;
     text-align: center;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 @media (min-width: 500px) {
