@@ -5,6 +5,18 @@
   font-family: cursive;
 }
 
+p {
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+}
+
+a[href="index.html"]::before {
+  content: "Return ";
+  font-weight: bold;
+}
+
 a::after {
   content: "⇐";
   font-weight: bold;
@@ -31,7 +43,6 @@ a:hover {
     margin-left: auto;
   }
 }
-
 @media screen and (max-width: 500px) {
   table, th, tr {
     border: 3px solid gray;
