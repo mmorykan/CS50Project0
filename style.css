@@ -19,7 +19,7 @@ div img {
   max-height: 100%;
 }
 
-ul, ol {
+ul, ol > div {
   border: 2px solid green;
 }
 
