@@ -1,49 +1,56 @@
-/* $font-weight: bold; */
-/* $border: 3px dotted red; */
+@charset "UTF-8";
 .name {
-    color: red;
-    font-weight: bold;
-    font-family: cursive;
-}
-
-#italics {
-    font-style: italic;
-}
-
-a::before {
-    content: "\21d2";
-    font-weight: bold;
+  color: red;
+  font-weight: bold;
+  font-family: cursive;
 }
 
 a::after {
-    content: "\21d0";
-    font-weight: bold;
+  content: "⇐";
+  font-weight: bold;
+}
+
+a::before {
+  content: "⇒";
+  font-weight: bold;
+}
+
+#italics {
+  font-style: italic;
 }
 
 a:hover {
-    background-color: aqua; 
+  background-color: aqua;
 }
 
-/* table, th, tr{
+@media screen and (min-width: 700px) {
+  table, th, tr {
     border: 3px dotted red;
     text-align: center;
     margin-right: auto;
     margin-left: auto;
-} */
-
-@media screen and (min-width: 700px) {
-    table, th, tr  {
-        border: 3px dotted red;
-        text-align: center;
-        margin-right: auto;
-        margin-left: auto;
-    }
+  }
 }
-
 @media screen and (max-width: 500px) {
-    table, th, tr {
-        border: 2px solid gray;
-        text-align: left;
-    }
+  table, th, tr {
+    border: 3px solid gray;
+    text-align: left;
+  }
+}
+.grid {
+  background-color: blue;
+  display: grid;
+  padding: 20px;
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+  grid-template-columns: 200px 200px auto;
 }
 
+.grid-item {
+  background-color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,58 @@
+$font-weight: bold;
+$grid-padding: 20px;
+
+.name {
+    color: red;
+    font-weight: $font-weight;
+    font-family: cursive;
+}
+
+a::after {
+    content: "\21d0";
+    font-weight: $font-weight;
+}
+
+a::before {
+    content: "\21d2";
+    font-weight: $font-weight;
+}
+
+#italics {
+    font-style: italic;
+}
+
+a:hover {
+    background-color: aqua; 
+}
+
+@media screen and (min-width: 700px) {
+    table, th, tr  {
+        border: 3px dotted red;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    table, th, tr {
+        border: 3px solid gray;
+        text-align: left;
+    }
+}
+
+.grid {
+    background-color: blue;
+    display: grid;
+    padding: $grid-padding;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    grid-template-columns: 200px 200px auto;
+}
+
+.grid-item {
+    background-color: white;
+    font-size: 20px;
+    padding: $grid-padding;
+    text-align: center;
+}
