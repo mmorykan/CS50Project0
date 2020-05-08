@@ -19,14 +19,8 @@ div img {
   max-height: 100%;
 }
 
-ul, ol > div {
-  border: 2px solid green;
-}
-
 a::before, a::after, a[href="index.html"]::after, a[href="index.html"]::before {
   font-weight: bold;
-  text-transform: uppercase;
-  font-family: fantasy;
 }
 
 a[href="index.html"]::before {
@@ -63,7 +57,7 @@ a:hover {
 }
 @media screen and (max-width: 500px) {
   table, th, tr {
-    border: 3px solid gray;
+    border: 2px solid gray;
     text-align: left;
   }
 }

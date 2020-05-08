@@ -25,15 +25,8 @@ div {
 
 }
 
-ul, ol > div{
-    border: 2px solid green;
-}
-
 %links {
     font-weight: $font-weight;
-    text-transform: uppercase;
-    font-family: fantasy;
-
 }
 
 a[href="index.html"]::before {
@@ -75,7 +68,7 @@ a:hover {
 
 @media screen and (max-width: 500px) {
     table, th, tr {
-        border: 3px solid gray;
+        border: 2px solid gray;
         text-align: left;
     }
 }
