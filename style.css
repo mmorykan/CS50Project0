@@ -17,6 +17,11 @@ a[href="index.html"]::before {
   font-weight: bold;
 }
 
+a[href="index.html"]::after {
+  content: "U+1F3E0";
+  font-weight: bold;
+}
+
 a::after {
   content: "⇐";
   font-weight: bold;
