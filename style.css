@@ -18,7 +18,7 @@ a[href="index.html"]::before {
 }
 
 a[href="index.html"]::after {
-  content: "U+1F3E0";
+  content: "🏠";
   font-weight: bold;
 }
 
