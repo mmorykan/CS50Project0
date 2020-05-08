@@ -16,7 +16,6 @@ p {
 
 a[href="index.html"]::before {
     content: "Return ";
-    font-weight: $font-weight;
 }
 
 a[href="index.html"]::after {
