@@ -5,31 +5,44 @@
   font-family: cursive;
 }
 
-p {
+div p {
   padding-bottom: 5px;
   padding-left: 5px;
   padding-right: 5px;
   text-align: center;
 }
+div img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+ul, ol {
+  border: 2px solid green;
+}
+
+a::before, a::after, a[href="index.html"]::after, a[href="index.html"]::before {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: fantasy;
+}
 
 a[href="index.html"]::before {
   content: "Return ";
-  font-weight: normal;
 }
 
 a[href="index.html"]::after {
   content: "🏠";
-  font-weight: bold;
 }
 
 a::after {
   content: "⇐";
-  font-weight: bold;
 }
 
 a::before {
   content: "⇒";
-  font-weight: bold;
 }
 
 #italics {
@@ -38,14 +51,6 @@ a::before {
 
 a:hover {
   background-color: aqua;
-}
-
-img:not([src="amdahls_law.jpg"]) {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 100%;
-  max-height: 100%;
 }
 
 @media screen and (min-width: 700px) {

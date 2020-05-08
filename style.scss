@@ -7,31 +7,53 @@ $grid-padding: 20px;
     font-family: cursive;
 }
 
-p {
-    padding-bottom: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
-    text-align: center;
+div {
+    p {
+        padding-bottom: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        text-align: center;
+    }
+
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+}
+
+ul, ol {
+    border: 2px solid green;
+}
+
+%links {
+    font-weight: $font-weight;
+    text-transform: uppercase;
+    font-family: fantasy;
+    
 }
 
 a[href="index.html"]::before {
+    @extend %links;
     content: "Return ";
-    font-weight: normal;
 }
 
 a[href="index.html"]::after {
+    @extend %links;
     content: "\01F3E0";
-    font-weight: $font-weight;
 }
 
 a::after {
+    @extend %links;
     content: "\21d0";
-    font-weight: $font-weight;
 }
 
 a::before {
+    @extend %links;
     content: "\21d2";
-    font-weight: $font-weight;
 }
 
 #italics {
@@ -40,14 +62,6 @@ a::before {
 
 a:hover {
     background-color: aqua; 
-}
-
-img:not([src="amdahls_law.jpg"]) {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
-    max-height: 100%;
 }
 
 @media screen and (min-width: 700px) {
