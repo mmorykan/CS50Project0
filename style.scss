@@ -20,7 +20,7 @@ a[href="index.html"]::before {
 }
 
 a[href="index.html"]::after {
-    content: "U+1F3E0";
+    content: "\01F3E0";
     font-weight: $font-weight;
 }
 
