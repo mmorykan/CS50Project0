@@ -15,6 +15,7 @@
         </ul>
 
         <h3 id="homework" class="name">Homework</h3>
+        <div>
             <ol>
                 <li>
                     Created a command-line program to transfer files from one computer to another computer
@@ -27,36 +28,39 @@
                 <li>Create a client to a WordPress XML-RPC server supporting numerous different methods as well as making the client accessible from the command line using Python's argparse module</li>
                 <li>Establish a gRPC server on a raspberry pi to monitor its own temperature and report values to a client</li>
             </ol>
+        </div>
         <h3 id="projects" class="name">Projects</h3>
-        <ol>
-            <li>
-                Implement two chat systems over the network using the server-client TCP model and the peer-to-peer UDP model
-                <ul>
-                    <li>Make sure to let each user pick their own username and that it does not match the username of any other user</li>
-                    <li>Upon connection, a user receives the past ten messages sent and each message is sent with a time stamp and the user who sent it</li>
-                    <li>Make heavy use of Python's socket and argparse modules as well as the asyncio module to be able to run code in parallel</li>
-                    <li>Deploy the program onto a raspberry pi inside of a screen session</li>
-                </ul> 
-            </li>
-            <li>
-                Implement a store inventory system that can be accessed by a gRPC server/client and a XML-RPC server/client
-                <ul>
-                    <li>Create all RPC methods yourself and document the API accordingly</li>
-                    <li>When the inventory system is shut down, use Python's pickle module to pickle the inventory into a file before termination</li>
-                    <li>Create two demonstration clients acting with both servers that share a massive amount of argparse between them</li>
-                    <li>Time the client to server interactions in order to see that gRPC runs much faster than XML-RPC because of less network overhead</li>
-                    <li>Make sure that the program is screened on an AWS instance</li>
-                </ul>
-            </li>
-            <li>
-                Implement one serial and one distributed program of a genetic algorithm simulation using the traveling salesman problem
-                <ul>
-                    <li>Make heavy use of Python's celery module to distribute the work of the algorithm to multiple differnet AWS instances</li>
-                    <li>Time each trial run to see the difference in efficiency between distributed execution and serial execution</li>
-                    <li>Prepare a final presentation of the results including the results of Amdahl's Law and any speedups found</li>
-                </ul>
-            </li>
-        </ol>
+        <div>
+            <ol>
+                <li>
+                    Implement two chat systems over the network using the server-client TCP model and the peer-to-peer UDP model
+                    <ul>
+                        <li>Make sure to let each user pick their own username and that it does not match the username of any other user</li>
+                        <li>Upon connection, a user receives the past ten messages sent and each message is sent with a time stamp and the user who sent it</li>
+                        <li>Make heavy use of Python's socket and argparse modules as well as the asyncio module to be able to run code in parallel</li>
+                        <li>Deploy the program onto a raspberry pi inside of a screen session</li>
+                    </ul> 
+                </li>
+                <li>
+                    Implement a store inventory system that can be accessed by a gRPC server/client and a XML-RPC server/client
+                    <ul>
+                        <li>Create all RPC methods yourself and document the API accordingly</li>
+                        <li>When the inventory system is shut down, use Python's pickle module to pickle the inventory into a file before termination</li>
+                        <li>Create two demonstration clients acting with both servers that share a massive amount of argparse between them</li>
+                        <li>Time the client to server interactions in order to see that gRPC runs much faster than XML-RPC because of less network overhead</li>
+                        <li>Make sure that the program is screened on an AWS instance</li>
+                    </ul>
+                </li>
+                <li>
+                    Implement one serial and one distributed program of a genetic algorithm simulation using the traveling salesman problem
+                    <ul>
+                        <li>Make heavy use of Python's celery module to distribute the work of the algorithm to multiple differnet AWS instances</li>
+                        <li>Time each trial run to see the difference in efficiency between distributed execution and serial execution</li>
+                        <li>Prepare a final presentation of the results including the results of Amdahl's Law and any speedups found</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
         <img src="amdahls_law.jpg" alt="amdahls_law">
 
         <h3 id="summary" class="name">Summary</h3>

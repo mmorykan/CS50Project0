@@ -23,17 +23,17 @@ div {
         max-height: 100%;
     }
 
-}
+    ul, ol {
+        border: 2px solid green;
+    }
 
-ul, ol {
-    border: 2px solid green;
 }
 
 %links {
     font-weight: $font-weight;
     text-transform: uppercase;
     font-family: fantasy;
-    
+
 }
 
 a[href="index.html"]::before {
