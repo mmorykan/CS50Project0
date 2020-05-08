@@ -31,26 +31,12 @@ a:hover {
     margin-left: auto;
   }
 }
+
 @media screen and (max-width: 500px) {
   table, th, tr {
     border: 3px solid gray;
     text-align: left;
   }
-}
-.grid {
-  background-color: blue;
-  display: grid;
-  padding: 20px;
-  grid-column-gap: 20px;
-  grid-row-gap: 10px;
-  grid-template-columns: 200px 200px auto;
-}
-
-.grid-item {
-  background-color: white;
-  font-size: 20px;
-  padding: 20px;
-  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
